@@ -7,7 +7,11 @@ public class Mentoria {
     private String descricao;
     private LocalDate data;
 
-    public String getTitulo() {
+    public Mentoria() {
+
+    }
+
+    public String getTitulo(String java) {
         return titulo;
     }
 
@@ -15,7 +19,7 @@ public class Mentoria {
         this.titulo = titulo;
     }
 
-    public String getDescricao() {
+    public String getDescricao(String orientaçãoAObjetosComJava) {
         return descricao;
     }
 
@@ -23,7 +27,7 @@ public class Mentoria {
         this.descricao = descricao;
     }
 
-    public LocalDate getData() {
+    public LocalDate getData(int i) {
         return data;
     }
 

@@ -5,7 +5,11 @@ public class Curso {
     private String descricao;
     private int cargaHoraria;
 
-    public String getTitulo() {
+    public Curso() {
+
+    }
+
+    public String getTitulo(String java) {
         return titulo;
     }
 
@@ -13,7 +17,7 @@ public class Curso {
         this.titulo = titulo;
     }
 
-    public String getDescricao() {
+    public String getDescricao(String orientaçãoAObjetosComJava) {
         return descricao;
     }
 
@@ -21,7 +25,7 @@ public class Curso {
         this.descricao = descricao;
     }
 
-    public int getCargaHoraria() {
+    public int getCargaHoraria(int i) {
         return cargaHoraria;
     }
 
