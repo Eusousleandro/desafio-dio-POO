@@ -1,4 +1,6 @@
+import br.com.dio.desafio.dominio.Bootcamps;
 import br.com.dio.desafio.dominio.Curso;
+import br.com.dio.desafio.dominio.Dev;
 import br.com.dio.desafio.dominio.Mentoria;
 
 import java.time.LocalDate;
@@ -19,8 +21,27 @@ public class Main {
         mentoria.setDescricao("Menntoria de Orientação a objetos com Java");
         mentoria.setData(LocalDate.now());
 
-        System.out.println(curso1);
-        System.out.println(mentoria);
+       // System.out.println(curso1);
+       // System.out.println(mentoria);
+
+        Bootcamps bootcamps = new Bootcamps();
+        bootcamps.setNome("Bootcamps Java Developers");
+        bootcamps.setDescricao("Conteudo Bootcamps Java Developers");
+        bootcamps.getConteudos().add(curso1);
+        bootcamps.getConteudos().add(mentoria);
+
+        Dev devLeandro = new Dev();
+        devLeandro.setNome("Leandro");
+        devLeandro.progredir();
+        System.out.println("Conteúdos incritos" + devLeandro.getConteudosInscritos());
+        System.out.println("Conteúdos incritos" + devLeandro.getConteudosConcluindos());
+
+        Dev devAngela = new Dev();
+        devAngela.setNome("Angela");
+        devAngela.progredir();
+        System.out.println("Conteúdos incritos" + devAngela.getConteudosInscritos());
+        System.out.println("Conteúdos Concluídos" + devAngela.getConteudosConcluindos());
+
     }
 
 }
